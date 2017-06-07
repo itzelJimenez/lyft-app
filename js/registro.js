@@ -49,10 +49,7 @@ var validacion = function(e){
 	$inputTel = $('#numero');
 	$contInputTel= $inputTel.val();
 	console.log($contInputTel.length);
-	if ($contInputTel.length = 10) {
-		enviandoCodigo();
-		setTimeout(redireccion, 5000);
-	} else{
+	if ($contInputTel.length <1 || $contInputTel.length < 10) {
 		swal({
 		  title: "",
 		  text: "Write a valid number",
@@ -60,6 +57,9 @@ var validacion = function(e){
 		  timer: 2000,
 		  showConfirmButton: false
 		});
+	} else{
+		enviandoCodigo();
+		setTimeout(redireccion, 5000);
 	}
 }
 
