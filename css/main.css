@@ -24,7 +24,13 @@
 .letra-tema{
 	color: #08b4ad;
 }
-.btn-registro{
+.btn-inicio-registro{
 	background-color: rgba(255, 255, 255, 0);
 	border: solid 1px #fff;
+}
+.div-registro{
+	height: 150px;
+}
+.div-titulo-registro{
+	margin-top: 20%;
 }

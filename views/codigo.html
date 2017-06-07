@@ -6,21 +6,28 @@
 		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Cabin|Hind|Lora" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection"/>
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../css/sweetalert.css">
     <!--Let browser know website is optimized for mobile-->
     	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body>
-		<section class="portada grey darken-3">
-			<div class="row">
-				<img src="../imgs/logo.ico" class="logo-inicio">
+		<section class="container">
+			<div class="row div-titulo-registro">
+				<h4 class="center-align letra-tema">Verify phone number</h4>
 			</div>
-			<div class="row abajo valign-wrapper">	
-				<span class="col s6 center-align"><a href="" class="btn btn-inicio-registro white-letter waves-effect col s10">Log In</a></span>
-				<span class="col s6 center-align"><a href="registro.html" class="btn waves-effect col s10" id="registro">Sing up</a></span>
-			</div>	
+			<div class="row center-align">
+				<p class="center-align">___ ___ ___ ___</p>
+			</div>
+			<div class="row">
+				<p class="center-align">Enter the code sent to <span id="telUsuario"></span></p>
+			</div>
+			<div class="row div-registro valign-wrapper">
+				<span class="col s12 center-align"><button class="btn waves-effect" type="submit" id="enviarCodigo">Resend Code</button></span>
+			</div>
 		</section>
 		<script src="../js/jquery-3.2.1.min.js"></script>
     	<script type="text/javascript" src="../js/materialize.min.js"></script>
-    	<script type="text/javascript" src="../js/inicio.js"></script>
+    	<script type="text/javascript" src="../js/registro.js"></script>
+    	<script src="../js/sweetalert.min.js"></script>
 	</body>
 </html>
